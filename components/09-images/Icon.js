@@ -3,6 +3,7 @@ import React from "react";
 import MCIcon from "@expo/vector-icons/MaterialCommunityIcons";
 import Feather from "@expo/vector-icons/Feather";
 import globalStyles from "../../assets/styles/globalStyles";
+
 const Icon = () => {
   return (
     <View style={globalStyles.container}>
@@ -12,9 +13,16 @@ const Icon = () => {
         size={50}
         color="blue"
       />
-        {Platform.OS === "ios" ? <Feather name="life-buoy" size={55}/> : <MCIcon name="freebsd"  size={55}/>}
+
+      {Platform.OS === "ios" ? (
+        <Feather name="life-buoy" size={55} />
+      ) : (
+        <MCIcon name="freebsd" size={55} />
+      )}
     </View>
   );
 };
+
 export default Icon;
+
 const styles = StyleSheet.create({});

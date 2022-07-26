@@ -1,4 +1,4 @@
-import { Text, View, StatusBar, SafeAreaView, Platform } from "react-native";
+import { Text, View, StyleSheet, StatusBar, SafeAreaView } from "react-native";
 import Flex1 from "./components/01-flex/flex1";
 import Flex2 from "./components/01-flex/flex2";
 import Flex3 from "./components/01-flex/flex3";
@@ -17,28 +17,29 @@ import PractiseView from "./components/05-practise-view/practise-view";
 import PractiseScrollView from "./components/06-practise-scrollview/practise-scrollview";
 import PractiseFlatList from "./components/07-practise-flatlist/practise-flatlist";
 import FlatListComp from "./components/08-practise-flatlist-component/flatlist-comp";
-import BackgroundImage from "./components/09-images/Background";
-import ExternalImage from "./components/09-images/ExternalImage";
-import Icon from "./components/09-images/Icon";
-import LocalImportImage from "./components/09-images/LocalImportImage";
-import LocalRequireImage from "./components/09-images/LocalImportImageRequire";
-import Presble from "./components/10-buttons/Pressable";
-import Pressable from "./components/10-buttons/Pressable";
-import Touchables from "./components/10-buttons/Touchables";
-//import Practise1 from "./components/03-practise-flexbox/practise1";
+import BackgroundImage from "./components/09-images/backgroundImage";
+import ExternalImage from "./components/09-images/external";
+import Icon from "./components/09-images/icon";
+import LocalImportImage from "./components/09-images/local-import";
+import LocalRequireImage from "./components/09-images/local-require";
+import CustomComponent from "./components/10-buttons/custom-component";
+import Prsbl from "./components/10-buttons/pressable";
+import Touchables from "./components/10-buttons/touchables";
+import Counter from "./components/11-practise-counter/counter";
+import CategoryManager from "./components/12-practise-category/category-manager";
+
+
+
+
 
 const App = () => {
   return (
     <SafeAreaView
       style={{
         flex: 1,
-        backgroundColor:"#0CECDD",
-       
       }}
     >
       {/*       
-
-// paddingTop: Platform.OS ==="android" ? StatusBar.currentHeight : 0;
 <Flex1/>
 <Flex2/>
 <Flex3/>
@@ -58,14 +59,18 @@ const App = () => {
 <PractiseFlatList/>
 <FlatListComp/>
 <ExternalImage/>
-  <LocalImportImage/>
-     <LocalRequireImage/>
-      <BackgroundImage/>
-       <Icon/>
-       <Touchables/>
+<LocalImportImage/>
+<LocalRequireImage/>
+<BackgroundImage/>
+<Icon/>
+<Touchables/>
+<Prsbl/>
+<CustomComponent/>
+<Counter/>
  */}
-     <Presble/>
-      <StatusBar backgroundColor="#247881" barStyle="light-content"/>
+      <CategoryManager/>
+
+      <StatusBar backgroundColor="red" barStyle="dark-content" />
     </SafeAreaView>
   );
 };

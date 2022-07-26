@@ -1,40 +1,51 @@
-import { StyleSheet, Text, TouchableHighlight, TouchableNativeFeedback, TouchableOpacity, View } from 'react-native'
-import React from 'react'
-import globalStyes from "../../assets/styles/globalStyles"
+import { StyleSheet, Text, TouchableHighlight, TouchableOpacity, TouchableWithoutFeedback, View } from "react-native";
+import React from "react";
+import globalStyles from "../../assets/styles/globalStyles";
+
 const Touchables = () => {
+  const sendMessage = () => {
+    console.log("ok");
+  };
 
-  const Touchable =()=>{
-    const sentMessage=()=>{
-
-    }
-  }
   return (
-    <View style={globalStyes.container}>
-      <TouchableHighlight onPress={Touchable}  underlayColor="green" style={styles.btn}>
-          <Text>TouchablesHighlight</Text>
+    <View style={globalStyles.container}>
+      <TouchableHighlight
+        onPress={sendMessage}
+        style={styles.button}
+        underlayColor="blue"
+      >
+        <Text>Touchable Highlight</Text>
       </TouchableHighlight>
 
 
-      <TouchableOpacity onPress={Touchable}  activeOpacity={0.6} style={styles.btn}>
-          <Text>TouchablesWithOpicity</Text>
+      <TouchableOpacity
+        onPress={sendMessage}
+        style={styles.button}
+        activeOpacity={0.4}
+      >
+        <Text>Touchable Opacity</Text>
       </TouchableOpacity>
 
 
-      <TouchableNativeFeedback onPress={Touchable} >
-          <Text>TouchableWithouFeedBack</Text>
-      </TouchableNativeFeedback>
+      <TouchableWithoutFeedback
+        onPress={sendMessage}
+      >
+        <Text>Touchable Without Feedback</Text>
+      </TouchableWithoutFeedback>
+
+
 
     </View>
-  )
-}
+  );
+};
 
-export default Touchables
+export default Touchables;
 
 const styles = StyleSheet.create({
-    btn:{
-      padding:10,
-      backgroundColor:"yellow",
-      borderRadius:10,
-      margin:4
-    }
-})
+  button: {
+    backgroundColor: "red",
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+    borderRadius: 10,
+  },
+});

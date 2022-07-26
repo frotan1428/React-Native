@@ -14,7 +14,7 @@ const AddCity = ({ addCity }) => {
       />
       <Button
         title="ADD"
-        color="#30AADD"
+        color="red"
         onPress={(e) => {
           addCity(city);
           setCity("");
@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
     borderColor: "gray",
     borderWidth: 1,
     padding: 10,
-   // borderRadius: 10,
+    borderRadius: 10,
     marginBottom: 10,
   },
 });

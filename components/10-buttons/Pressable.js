@@ -22,7 +22,7 @@ export default Prsbl;
 
 const styles = StyleSheet.create({
   button: {
-    // backgroundColor: "yellow",
+    backgroundColor: "red",
     paddingHorizontal: 20,
     paddingVertical: 10,
     borderRadius: 10,
