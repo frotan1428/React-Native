@@ -27,6 +27,13 @@ import Prsbl from "./components/10-buttons/pressable";
 import Touchables from "./components/10-buttons/touchables";
 import Counter from "./components/11-practise-counter/counter";
 import CategoryManager from "./components/12-practise-category/category-manager";
+import MyAlert from "./components/13-api/alert";
+import MyDimentions from "./components/13-api/dimentions";
+import MyKeyboard from "./components/13-api/keyboard";
+import MyLinking from "./components/13-api/linking";
+import MyPlatform from "./components/13-api/platform";
+import MyShare from "./components/13-api/share";
+import MyVibration from "./components/13-api/vibration";
 
 
 
@@ -67,8 +74,16 @@ const App = () => {
 <Prsbl/>
 <CustomComponent/>
 <Counter/>
+<CategoryManager/>
+<MyAlert/>
+<MyDimentions/>
+<MyKeyboard/>
+<MyLinking/>
+<MyPlatform/>
+<MyShare/>
  */}
-      <CategoryManager/>
+      <MyVibration/>
+      
 
       <StatusBar backgroundColor="red" barStyle="dark-content" />
     </SafeAreaView>
